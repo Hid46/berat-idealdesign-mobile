@@ -411,3 +411,19 @@ body:not(#afui) .upage-outer {
     min-height: 100px;
   }
 }
+.figure-align {
+  display: table;
+  margin: 0px auto;
+}
+.figure-align img {
+  width: 100%;
+}
+.image-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media all {
+  #afui .scale-image {
+    width: 200px;
+  }
+}

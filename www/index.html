@@ -11,6 +11,13 @@
 	<!-- content goes here-->
 	<!-- content goes here-->
 	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
+	<!-- content goes here-->
 
 	<head>
 		<meta charset="UTF-8">
@@ -41,8 +48,8 @@
 		<script type="application/javascript" src="sidebar/js/jquery.event.swipe.js"></script>
 		<script type="application/javascript" src="sidebar/js/sidebar.js"></script>
 		<script type="application/javascript" src="sidebar/js/swipe.js"></script>
-        <script src="js/beratideal.js"></script>
-        <script src="js/beratbmi.js"></script>
+		<script src="js/beratideal.js"></script>
+		<script src="js/beratbmi.js"></script>
 	</head>
 
 	<body id="afui">
@@ -68,10 +75,8 @@
 										<div class="widget-container left-receptacle"></div>
 										<div class="widget-container right-receptacle"></div>
 										<div>
-											<p><b>Anda ingin mengetahui berapa berat ideal anda?</b>
-											</p>
-											<br>
-											<br>
+											<p><b>Anda ingin mengetahui berapa berat ideal anda? Dan berapa Body Mass Index anda?</b>w</p>
+											<p></p>
 										</div>
 									</div><a href="#berat" class="button widget uib_w_3 d-margins" data-uib="app_framework/button" data-ver="0" id="btnBerat">Berat Ideal</a>
 									<div class="widget uib_w_4 d-margins" data-uib="media/text" data-ver="0">
@@ -80,7 +85,7 @@
 										<div>
 											<p align="center">Atau</p>
 										</div>
-									</div><a href="#beratbmi" class="button widget uib_w_5 d-margins" data-uib="app_framework/button" data-ver="0" id="btnBeratbmi">Berat Ideal (BMI)</a><span class="uib_shim"></span>
+									</div><a href="#beratbmi" class="button widget uib_w_5 d-margins" data-uib="app_framework/button" data-ver="0" id="btnBmi">Body Mass Index (BMI)</a><span class="uib_shim"></span>
 								</div>
 							</div>
 							<span class="uib_shim"></span>
@@ -96,7 +101,7 @@
 			<div class="upage panel" id="beratbmi" data-header="af-header-2" data-footer="none">
 				<div class="upage-outer">
 					<header class="container-group inner-element uib_w_9" data-uib="app_framework/header" data-ver="0" id="af-header-2">
-						<h1>Berat Ideal (BMI)</h1>
+						<h1>Body Mass Index (BMI)</h1>
 						<div class="widget-container wrapping-col single-centered"></div>
 						<div class="widget-container content-area horiz-area wrapping-col left with-back"><a class="button" id="backButton">Back</a>
 						</div>
@@ -111,12 +116,41 @@
 									<div class="table-thing with-label widget uib_w_10 d-margins" data-uib="app_framework/input" data-ver="0">
 										<label class="narrow-control label-top-left" for="tinggibmiInput">Tinggi (cm)</label>
 
-										<input class="wide-control" type="number" id="tinggibmiInput">
+										<input class="wide-control" type="number" id="tinggibmiInput" value="165">
+									</div>
+									<div class="table-thing with-label widget uib_w_13 d-margins" data-uib="app_framework/input" data-ver="0">
+										<label class="narrow-control label-top-left" for="beratbmiInput">Berat Badan (kg)</label>
+										<input class="wide-control" type="text" value="45" id="beratbmiInput">
 									</div><a class="button widget uib_w_11 d-margins" data-uib="app_framework/button" data-ver="0" id="btnbmiHitung">Hitung</a>
 									<div class="table-thing with-label widget uib_w_12 d-margins" data-uib="app_framework/input" data-ver="0">
-										<label class="narrow-control label-top-left" for="beratbmibox">Berat BMI (kg)</label>
+										<label class="narrow-control label-top-left" for="bmibox">Body Mass Index</label>
 
-										<input class="wide-control" type="text" id="beratbmibox">
+										<input class="wide-control" type="text" id="bmibox">
+									</div>
+									<div class="widget uib_w_15 d-margins" data-uib="media/text" data-ver="0">
+										<div class="widget-container left-receptacle"></div>
+										<div class="widget-container right-receptacle"></div>
+										<div>
+											<br>
+											<p><b>Apakah Anda termasuk kurus, normal, atau overwight? Lihat patokan di bawah ini :</b>
+											</p>
+											<p>&nbsp;</p>
+											<p>BMI &lt; 18.5 = berat badan kurang (underweight)</p>
+											<p>&nbsp;</p>
+											<p>BMI 18.5 - 24 = normal</p>
+											<p>&nbsp;</p>
+											<p>BMI 25 - 29 = kelebihan berat badan (overweight)</p>
+											<p>&nbsp;</p>
+											<p>BMI &gt;30 = obesitas</p>
+										</div>
+									</div>
+									<div class="widget uib_w_14 scale-image d-margins" data-uib="media/img" data-ver="0">
+										<figure class="figure-align">
+											<center>
+												<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-ash3/t1.0-9/1013744_10201688767608862_1442126432_n.jpg" alt="table" id="tablebmi">
+											</center>
+											<figcaption data-position="bottom"></figcaption>
+										</figure>
 									</div><span class="uib_shim"></span>
 								</div>
 							</div>
@@ -144,7 +178,7 @@
 									<div class="table-thing with-label widget uib_w_10 d-margins" data-uib="app_framework/input" data-ver="0">
 										<label class="narrow-control label-top-left" for="tinggiInput">Tinggi (cm)</label>
 
-										<input class="wide-control" type="number" id="tinggiInput">
+										<input class="wide-control" type="number" id="tinggiInput" value="150">
 									</div><a class="button widget uib_w_11 d-margins" data-uib="app_framework/button" data-ver="0" id="btnHitung">Hitung</a>
 									<div class="table-thing with-label widget uib_w_12 d-margins" data-uib="app_framework/input" data-ver="0">
 										<label class="narrow-control label-top-left" for="beratbox">Berat (kg)</label>

@@ -1,9 +1,10 @@
 $(document).ready(function() {
     
     $('#btnbmiHitung').click(function() {
-        var tinggiCm = parseFloat($('#tinggibmiInput').val());
-        var beratbmiKg = (tinggiCm - 100) * 0.9;
-        $('#beratbmibox').val(beratbmiKg + ' kg');
+        var heightbmiCm = parseFloat($('#tinggibmiInput').val());
+        var weightbmiKg = parseFloat($('#beratbmiInput').val());
+        var bmi = (weightbmiKg / ((heightbmiCm/100) * (heightbmiCm/100)));
+        $('#bmibox').val(bmi);
     });
     
 });
